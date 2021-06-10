@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <title>{{ title }} - Climbing with Katy</title>
+    {% endblock %}
+    <link rel = "stylesheet" href = "static/css/main.css" />
+</head>
+<body>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <div id="footer">
+        {% block footer %}
+        &copy; Copyright 2021 by Katy the web developer.
+        {% endblock %}
+    </div>
+</body>
+</html>

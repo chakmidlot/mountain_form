@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <p>Sign in if you want to play with us</p>
+    <form method = "post" action="/signin">
+        <div><label>name: <input type="text" name="name"></label></div>
+        <div><label>I have my testament<input type="checkbox" name="testament" /></label></div>
+        <div><button type="submit">Send</button><div>
+    </form>
+{% endblock %}
